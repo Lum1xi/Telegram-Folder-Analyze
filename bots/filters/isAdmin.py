@@ -8,6 +8,6 @@ class IsAdmin(BaseFilter):
         if message.from_user and message.from_user.id == OWNER_ID:
             return True
         await message.answer(
-            "️You do not have access to this bot.\n\nTo order bots, please contact us here: @Hub_H"
+            "️You do not have access to this bot."
         )
         return False
